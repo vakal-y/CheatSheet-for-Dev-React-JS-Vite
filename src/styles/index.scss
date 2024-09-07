@@ -1,5 +1,17 @@
+@import './vars.scss';
+
 * {
     margin    : 0;
     padding   : 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: $bg;
+    color           : $white;
+    font-family     : $familyM;
+}
+
+a {
+    text-decoration: none;
 }
