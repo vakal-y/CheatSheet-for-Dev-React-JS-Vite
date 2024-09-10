@@ -1,7 +1,9 @@
-import './HomePage.module.scss';
+import styles from './HomePage.module.scss';
 
 export default function HomePage() {
     return (
-        <div><h1>HomePage</h1></div>
+        <div className={styles.homePage}>
+            <h1>HomePage</h1>
+        </div>
     )
 }

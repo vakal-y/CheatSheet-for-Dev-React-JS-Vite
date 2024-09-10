@@ -1,12 +1,22 @@
 @import '../../styles/vars.scss';
 
 .header {
-    height         : 10vh;
-    width          : 100vw;
-    display        : flex;
-    margin         : 0 auto;
-    padding        : 3vh 5vw;
-    justify-content: space-between;
-    align-items    : center;
-    border-bottom  : 1px solid $white;
+    height       : 14vh;
+    width        : 100vw;
+    display      : flex;
+    margin       : 0 auto;
+    padding      : 3vh 5vw;
+    align-items  : center;
+    border-bottom: 1px solid $white;
+
+    .info {
+        margin-left: 2rem;
+    }
+
+    .navigate {
+        width          : 10rem;
+        display        : flex;
+        justify-content: space-between;
+        margin-left    : auto;
+    }
 }

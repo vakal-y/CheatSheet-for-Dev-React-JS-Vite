@@ -15,7 +15,6 @@ export default function App() {
         <Route path='dashboard' element={<DashboardPage />}></Route>
         <Route path='*' element={<ErrorPage />}></Route>
       </Routes>
-      <h1>Hello, world!</h1>
       <Footer />
     </div>
   )
