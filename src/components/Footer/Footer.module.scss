@@ -1,12 +1,45 @@
 @import '../../styles/vars.scss';
 
 .footer {
-    height         : 10vh;
-    width          : 100vw;
-    display        : flex;
-    margin         : 0 auto;
-    padding        : 3vh 5vw;
-    justify-content: space-between;
-    align-items    : center;
-    border-top     : 1px solid $white;
+    height     : 14vh;
+    width      : 100vw;
+    display    : flex;
+    margin     : 0 auto;
+    padding    : 3vh 5vw;
+    align-items: center;
+    border-top : 1px solid $white;
+
+    nav {
+        width  : 100%;
+        display: flex;
+
+        ul {
+            width          : 100%;
+            display        : flex;
+            align-items    : center;
+            justify-content: flex-end;
+            list-style     : none;
+
+            li:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            li:nth-child(2) {
+                margin-left: 20rem;
+            }
+
+            li:first-child {
+                margin-right: auto;
+            }
+
+            li:nth-child(3) {
+                margin-right: 5vw;
+            }
+
+            li:nth-child(4) {
+                width     : 10rem;
+                text-align: right;
+            }
+        }
+    }
 }
