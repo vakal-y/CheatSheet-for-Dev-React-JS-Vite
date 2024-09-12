@@ -3,6 +3,7 @@ import Logo from '../../ui/Logo/Logo';
 import find from '../../assets/icons/find.svg';
 import create from '../../assets/icons/create.svg';
 import log from '../../assets/icons/log.svg';
+import ButtonSearch from '../../ui/ButtonSearch/ButtonSearch';
 
 export default function Header() {
     return (
@@ -13,7 +14,7 @@ export default function Header() {
                 <p>With our JS cheatSheet</p>
             </div>
             <nav className={styles.navigate}>
-                <img src={find} alt="find" />
+                <ButtonSearch />
                 <img src={create} alt="create" />
                 <img src={log} alt="log" />
             </nav>

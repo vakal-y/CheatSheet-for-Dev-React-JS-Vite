@@ -1,0 +1,21 @@
+@import '../../styles/vars.scss';
+
+.buttonSearch {
+    display: flex;
+
+    button {
+        background-color: transparent;
+        border          : none;
+    }
+
+    input {
+        width           : 10rem;
+        height          : 2.5rem;
+        margin-right    : 1rem;
+        background-color: transparent;
+        border          : 1px solid $white;
+        border-radius   : 0.625rem;
+        overflow        : hidden;
+
+    }
+}
