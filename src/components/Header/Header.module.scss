@@ -14,9 +14,10 @@
     }
 
     .navigate {
-        width      : 10rem;
-        display    : flex;
-        gap        : 1rem;
-        margin-left: auto;
+        width          : 20rem;
+        display        : flex;
+        gap            : 1rem;
+        margin-left    : auto;
+        justify-content: flex-end;
     }
 }

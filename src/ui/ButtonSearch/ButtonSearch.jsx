@@ -19,7 +19,7 @@ export default function ButtonSearch() {
             {isInputVisible && (
                 <input
                     type="text"
-                    placeholder="Введите текст"
+                    placeholder="Enter search"
                     ref={inputRef}
                     onBlur={handleBlur}
                     autoFocus
