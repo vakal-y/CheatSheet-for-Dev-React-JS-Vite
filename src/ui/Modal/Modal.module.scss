@@ -1,0 +1,50 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.modalOverlay {
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    display        : flex;
+    background     : rgba(0, 0, 0, 0.1);
+    align-items    : center;
+    justify-content: center;
+
+    .modalContent {
+        width     : 58.125rem;
+        height    : auto;
+        max-height: 70vh;
+        max-width : 80%;
+        position  : relative;
+
+        display       : flex;
+        flex-direction: column;
+        padding       : 2.1875rem;
+        gap           : 1.5rem;
+        background    : $white;
+        border-radius : 1.25rem;
+        box-shadow    : 0 0 40px rgba(0, 0, 0, 0.5);
+
+        h2 {
+            color: $black;
+        }
+
+        .inputDark {
+            @include inputStyles($black, $black)
+        }
+
+        .inputDark:nth-child(4) {
+            font-weight   : 600;
+            text-transform: uppercase;
+            transition    : transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .inputDark:nth-child(4):hover {
+            transform : scale(1.01);
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+        }
+    }
+
+}

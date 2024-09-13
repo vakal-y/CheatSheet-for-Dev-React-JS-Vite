@@ -1,9 +1,8 @@
 import styles from './Header.module.scss';
 import Logo from '../../ui/Logo/Logo';
-import find from '../../assets/icons/find.svg';
-import create from '../../assets/icons/create.svg';
 import log from '../../assets/icons/log.svg';
 import ButtonSearch from '../../ui/ButtonSearch/ButtonSearch';
+import ButtonCreateNote from '../../ui/ButtonCreatePost/ButtonCreatePost';
 
 export default function Header() {
     return (
@@ -15,7 +14,7 @@ export default function Header() {
             </div>
             <nav className={styles.navigate}>
                 <ButtonSearch />
-                <img src={create} alt="create" />
+                <ButtonCreateNote />
                 <img src={log} alt="log" />
             </nav>
         </div>

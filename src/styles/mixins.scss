@@ -1,0 +1,15 @@
+@import './vars.scss';
+
+@mixin inputStyles($border-color, $color) {
+
+    height          : 2.5rem;
+    min-height      : 2.5rem;
+    border-radius   : 0.625rem;
+    border          : 0.09375rem solid $border-color;
+    background-color: transparent;
+    padding         : 0.5rem;
+    font-family     : inherit;
+    font-size       : 1rem;
+    color           : $color;
+    resize          : vertical;
+}
