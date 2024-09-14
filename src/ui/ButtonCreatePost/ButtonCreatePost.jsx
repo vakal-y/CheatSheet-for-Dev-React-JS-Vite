@@ -1,13 +1,13 @@
 import styles from './ButtonCreatePost.module.scss';
-import { useState } from 'react';
+import { useState, useId } from 'react';
 import create from '../../assets/icons/create.svg';
 import Modal from '../Modal/Modal';
 
-export default function ButtonCreatePost({ isUserAuthorized }) {
+export default function ButtonCreatePost({ isUserAuthorized, addPost }) {
     const [isModalOpen, setModalOpen] = useState(false);
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
-
+    const uniqueId = useId();
 
     const handleOpenModal = () => {
         setModalOpen(true);
@@ -15,11 +15,15 @@ export default function ButtonCreatePost({ isUserAuthorized }) {
 
     const handleCloseModal = () => {
         setModalOpen(false);
+        setTitle('');
+        setContent('');
     }
 
     const handleCreatePost = () => {
-        console.log("Post Created:", { title, content });
-        setModalOpen(false);
+        const newPost = { id: `${uniqueId}-${Date.now()}`, title, content };
+        addPost(newPost);
+        console.log(`${uniqueId}-${Date.now()}`, title, content);
+        handleCloseModal();
     }
 
     return (
