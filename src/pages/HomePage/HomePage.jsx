@@ -1,6 +1,7 @@
 import styles from './HomePage.module.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ModalPost from '../../ui/ModalPost/ModalPost';
+import useRandomContainerStyle from '../../helpers/useRandomContainerStyle';
 
 export default function HomePage({ posts }) {
     const [selectedPost, setSelectedPost] = useState(null);

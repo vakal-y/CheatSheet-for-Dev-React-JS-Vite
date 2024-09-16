@@ -6,4 +6,21 @@
     display: flex;
     margin : 0 auto;
     padding: 3vh 5vw;
+
+    .postsPreview {
+        display: flex;
+        gap    : 2.8125rem;
+
+        .postItem {
+            width           : 21.5625rem;
+            height          : 9.375rem;
+            display         : flex;
+            margin          : 0 auto;
+            justify-content : center;
+            align-items     : center;
+            border-radius   : 0.9375rem;
+            background-color: $orangeBrown;
+            text-align      : center;
+        }
+    }
 }
