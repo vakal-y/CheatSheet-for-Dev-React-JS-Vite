@@ -11,9 +11,10 @@ export default function ModalPost({ isOpen, onClose, title, content }) {
     };
     return (
         <div className={styles.modalPost} onClick={handleOverlayClick}>
-            <div className={styles.modalPostContent}></div>
-            <h2>{selectedPost.title}</h2>
-            <p>{selectedPost.content}</p>
+            <div className={styles.modalPostContent}>
+                <h2>{title}</h2>
+                <p>{content}</p>
+            </div>
         </div>
     )
 }
