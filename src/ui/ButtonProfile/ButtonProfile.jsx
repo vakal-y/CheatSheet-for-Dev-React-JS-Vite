@@ -1,6 +1,6 @@
-import styles from './Button.module.scss';
+import styles from './ButtonProfile.module.scss';
 
-export default function Button() {
+export default function ButtonProfile() {
     return (
         <button className={styles.button}>
             press

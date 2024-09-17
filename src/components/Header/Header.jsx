@@ -3,6 +3,7 @@ import Logo from '../../ui/Logo/Logo';
 import log from '../../assets/icons/log.svg';
 import ButtonSearch from '../../ui/ButtonSearch/ButtonSearch';
 import ButtonCreatePost from '../../ui/ButtonCreatePost/ButtonCreatePost';
+import ButtonProfile from '../../ui/ButtonProfile/ButtonProfile';
 
 export default function Header({ addPost }) {
     return (
@@ -15,7 +16,7 @@ export default function Header({ addPost }) {
             <nav className={styles.navigate}>
                 <ButtonSearch />
                 <ButtonCreatePost addPost={addPost} />
-                <img src={log} alt="log" />
+                <ButtonProfile />
             </nav>
         </div>
     )
