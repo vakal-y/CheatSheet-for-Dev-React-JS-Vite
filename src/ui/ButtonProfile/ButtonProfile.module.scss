@@ -1,3 +1,6 @@
 @import '../../styles/vars.scss';
+@import '../../styles//mixins.scss';
 
-.button {}
+.buttonProfile {
+    @include buttons;
+}

@@ -46,3 +46,13 @@
         color: $black;
     }
 }
+
+@mixin buttons {
+    display: flex;
+
+    button {
+        background-color: transparent;
+        border          : none;
+        cursor          : pointer;
+    }
+}
