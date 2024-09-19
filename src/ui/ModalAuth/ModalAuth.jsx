@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import styles from './ModalAuth.module.scss';
+import Login from '../Login/Login';
+import Registration from '../Registration/Registration';
 
 export default function ModalAuth({ isOpen, onClose }) {
     const [activeTab, setActiveTab] = useState('login');
@@ -12,7 +14,7 @@ export default function ModalAuth({ isOpen, onClose }) {
 
     const handleOverlayClick = (e) => {
         if (e.target === e.currentTarget) {
-            onclose();
+            onClose();
         }
     }
 
@@ -31,6 +33,9 @@ export default function ModalAuth({ isOpen, onClose }) {
                     >
                         Registration
                     </button>
+                </div>
+                <div className={styles.tabsContent}>
+                    {activeTab === 'login' ? <Login /> : <Registration />}
                 </div>
             </div>
         </div>

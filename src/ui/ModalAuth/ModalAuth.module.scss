@@ -1,0 +1,11 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.modalOverlay {
+    @include modalMain;
+
+    .modalContent {
+        @include modalContentStyle;
+    }
+
+}
