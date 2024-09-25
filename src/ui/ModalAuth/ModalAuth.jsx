@@ -23,18 +23,18 @@ export default function ModalAuth({ isOpen, onClose }) {
             <div className={styles.modalContent}>
                 <div className={styles.tabs}>
                     <button
-                        className={styles.activeTab === 'login' ? 'active' : ''}
-                        onClick={() => handleTabSwitch(login)}>
+                        className={`${styles.modalButton} ${activeTab === 'login' ? styles.active : ''}`}
+                        onClick={() => handleTabSwitch('login')}>
                         Log in
                     </button>
                     <button
-                        className={styles.activeTab === 'register' ? 'active' : ''}
-                        onClick={() => handleTabSwitch(register)}
+                        className={`${styles.modalButton} ${activeTab === 'register' ? styles.active : ''}`}
+                        onClick={() => handleTabSwitch('register')}
                     >
                         Registration
                     </button>
                 </div>
-                <div className={styles.tabsContent}>
+                <div>
                     {activeTab === 'login' ? <Login /> : <Registration />}
                 </div>
             </div>
